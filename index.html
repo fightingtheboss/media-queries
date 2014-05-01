@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Media Queries Example</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+
+      .media {
+        width: 100%;
+        height: 100%;
+        background-color: hsl(0, 100%, 70%);
+      }
+
+      .media:before {
+        content: 'Phone';
+
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+
+        color: #fff;
+        font-weight: 900;
+        font-size: 72px;
+        text-align: center;
+      }
+
+      .mario-link {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        right: 0;
+        padding: 1em;
+
+      }
+
+      @media screen and (min-width: 640px) {
+        .media {
+          background-color: hsl(60, 100%, 70%);
+        }
+
+        .media:before {
+          content: 'Tablet';
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        .media {
+          background-color: hsl(120, 100%, 70%);
+        }
+
+        .media:before {
+          content: 'Laptop';
+        }
+      }
+
+      @media screen and (min-width: 1280px) {
+        .media {
+          background-color: hsl(180, 100%, 70%);
+        }
+
+        .media:before {
+          content: 'Desktop';
+        }
+      }
+
+      @media screen and (min-width: 1440px) {
+        .media {
+          background-color: hsl(270, 100%, 70%);
+        }
+
+        .media:before {
+          content: 'TV';
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="mario-link" href="mario.html">Media Query Mario</a>
+    <div class="media"></div>
+  </body>
+</html>
