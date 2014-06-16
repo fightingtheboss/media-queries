@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Queries</title>
+  <meta name="viewport" content="initial-scale=1,width=device-width">
+
+  <style>
+    html, body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .container {
+      width: 75%;
+      background-color: tomato;
+      margin: 0 auto;
+      overflow: auto;
+      max-width: 1080px;
+    }
+
+    .news {
+      width: 100%;
+      color: white;
+      font-size: 1.5em;
+    }
+
+    .news > p {
+      font-size: 0.77777777777778em;
+    }
+
+    @media screen and (min-width: 640px) {
+      .news {
+        float: left;
+        width: 50%;
+      }
+    }
+
+    @media screen and (min-width: 940px) {
+      .news {
+        float: left;
+        width: 33.33333333333%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="http://placehold.it/1080x300" alt="">
+    <article class="news">
+      <h1>Title 1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, impedit, ab, illo excepturi praesentium illum iusto fugit eos eaque perspiciatis dolor doloribus ipsam. Tempore, molestias quibusdam soluta eaque culpa voluptates.</p>
+    </article>
+<!--     <article class="news">
+      <h1>Title 2</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, impedit, ab, illo excepturi praesentium illum iusto fugit eos eaque perspiciatis dolor doloribus ipsam. Tempore, molestias quibusdam soluta eaque culpa voluptates.</p>
+    </article>
+    <article class="news">
+      <h1>Title 3</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, impedit, ab, illo excepturi praesentium illum iusto fugit eos eaque perspiciatis dolor doloribus ipsam. Tempore, molestias quibusdam soluta eaque culpa voluptates.</p>
+    </article>
+    <article class="news">
+      <h1>Title 4</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, impedit, ab, illo excepturi praesentium illum iusto fugit eos eaque perspiciatis dolor doloribus ipsam. Tempore, molestias quibusdam soluta eaque culpa voluptates.</p>
+    </article>
+ -->  </div>
+</body>
+</html>
